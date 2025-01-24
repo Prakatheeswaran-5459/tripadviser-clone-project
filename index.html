@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Adviser</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar__left">
+        <i class="fa-solid fa-bars navbar__left--icon"></i>
+        <img
+          src="./images/Tripadvisor_logo.svg"
+          alt="Tripadvisor Logo"
+          class="nav__logo"
+        />
+        <i
+          class="fa-solid fa-user navbar__left--icon"
+          style="
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            padding-left: 4px;
+            padding-top: 4px;
+          "
+        ></i>
+      </div>
+      <div class="navbar__center">
+        <p>Discover</p>
+        <p>Trips</p>
+        <p>Review</p>
+        <p>Forum</p>
+      </div>
+      <div class="navbar__right">
+        <i class="fa-regular fa-message"></i>
+        <hr style="height: 30px" />
+        <p>INR</p>
+        <p class="navbar__right--btn">SignIn</p>
+      </div>
+    </nav>
+
+    <!-- search bar and navbar -->
+    <main class="main__body">
+      <h1>Where To?</h1>
+      <div class="main">
+        <p class="main__nav">
+          <i class="fa-solid fa-house"></i
+          ><a href="" style="border-bottom: 1px solid black">Search All</a>
+        </p>
+        <p class="main__nav">
+          <i class="fa-solid fa-bed"></i><a href="">Hotels</a>
+        </p>
+        <p class="main__nav">
+          <i class="fa-solid fa-location-dot"></i><a href="">Things To Do</a>
+        </p>
+        <p class="main__nav">
+          <i class="fa-solid fa-utensils"></i><a href="">Retaurents</a>
+        </p>
+        <p class="main__nav">
+          <i class="fa-solid fa-plane"></i><a href="">Flights</a>
+        </p>
+        <p class="main__nav">
+          <i class="fa-solid fa-house-chimney"></i><a href="">Holiday Homes</a>
+        </p>
+      </div>
+    </main>
+
+    <div class="search">
+      <div class="search__bar">
+        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+        <input
+          type="text"
+          class="search__input"
+          placeholder="Place to go , Things To Do , Hotels ...."
+        />
+        <p class="search__btn">Search</p>
+      </div>
+    </div>
+
+    <div class="offer-image">
+      <img src="./images/tripadvisor-logo-e.webp" alt="" />
+    </div>
+
+    <!-- First recomended list -->
+    <div class="recomended-list">
+      <div class="recomended__title">
+        <h3>Explore top-rated destinations</h3>
+        <p>2025’s Travellers’ Choice Awards Best of the Best Destinations</p>
+      </div>
+      <div class="recomended-container">
+        <div class="travel-card">
+          <img src="./images/caption.jpg" alt="Travel Destination" class="caption-img" />
+          <h3 class="img-title">Top Destinations</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/caption (1).jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Trending Destination</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/caption (2).jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Food Destinations</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/caption (3).jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Culture Destinations</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- second recomnded list -->
+    <div class="favorite">
+      <div class="favorite-title">
+        <h3>Get inspired by our fave travel creators</h3>
+        <p>Tried-and-true guidance to fuel your next big trip</p>
+      </div>
+      <div class="favorite-container">
+        <div class="favorite-card">
+          <img src="./images/caption (4).jpg" class="favorite-img" alt="Rome" />
+          <p>By Ashlyn S</p>
+          <h3>3 family-friendly days in Rome</h3>
+          <div>
+            <img src="./images/heart.png" alt="Heart" />
+            <p>30 items</p>
+          </div>
+        </div>
+        <div class="favorite-card">
+          <img src="./images/caption (5).jpg" class="favorite-img" alt="Mexico City" />
+          <p>By Eileen Ivette</p>
+          <h3>The ultimate 'workcation' in Mexico City</h3>
+          <div>
+            <img src="./images/heart.png" alt="Heart" />
+            <p>28 items</p>
+          </div>
+        </div>
+        <div class="favorite-card">
+          <img src="./images/caption (6).jpg" class="favorite-img" alt="Barcelona" />
+          <p>By Two Bad Tourists</p>
+          <h3>Exploring LGBTQ+-friendly Barcelona</h3>
+          <div>
+            <img src="./images/heart.png" alt="Heart" />
+            <p>28 items</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third recomended List -->
+    <div class="place">
+      <div class="place-title">
+        <h3>Top experiences on Tripadvisor</h3>
+        <p>The best tours, activities and tickets</p>
+      </div>
+      <div class="place__container">
+        <div class="place__card">
+          <img src="./images/caption (7).jpg" alt="" />
+          <div class="place__card--icon">
+            <i class="fa-regular fa-heart" style="padding-left: 5px"></i>
+          </div>
+          <p
+            style="
+              border: 2px solid black;
+              width: max-content;
+              padding: 5px;
+              border-radius: 10px;
+            "
+          >
+            Best Seller
+          </p>
+          <p>Half-Day Railway Market and Floating Market Tour in Thailand</p>
+          <p>from ₹2,623 per adult</p>
+        </div>
+        <div class="place__card">
+          <img src="./images/caption (8).jpg" alt="" />
+          <div class="place__card--icon">
+            <i class="fa-regular fa-heart" style="padding-left: 5px"></i>
+          </div>
+          <p>Fontainhas Heritage Walk by Make It Happen</p>
+          <p>from ₹1,000 per adult</p>
+        </div>
+
+        <div class="place__card">
+          <img src="./images/caption (9).jpg" alt="" />
+          <div class="place__card--icon">
+            <i class="fa-regular fa-heart" style="padding-left: 5px"></i>
+          </div>
+          <p>
+            Ninh Binh Full-Day Tour from Hanoi to Hoa Lu, Tam Coc & Mua Cave Via
+            Boat & Bike
+          </p>
+          <p>from ₹4,875 per adult</p>
+        </div>
+        <div class="place__card">
+          <img src="./images/caption (10).jpg" alt="" />
+          <div class="place__card--icon">
+            <i class="fa-regular fa-heart" style="padding-left: 5px"></i>
+          </div>
+          <p>Cu Chi Tunnels and Mekong Delta Full Day Tour</p>
+          <p>from ₹4,875 per adult</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third recomended List -->
+    <div class="visit">
+      <h1 class="visit__title">More to Explore</h1>
+      <div class="visit__container">
+        <div class="visit__card">
+          <img src="./images/img1.jpg" alt="" />
+          <div class="place__card--icon">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <h3>
+            7 Bangkok hotels that highlight Thailand's spectacular architecture
+          </h3>
+        </div>
+        <div class="visit__card">
+          <img src="./images/img2.jpg" alt="" />
+          <div class="place__card--icon">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <h3>3 days in Tokyo: The perfect itinerary</h3>
+        </div>
+        <div class="visit__card">
+          <img src="./images/img3.jpg" alt="" />
+          <div class="place__card--icon">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <h3>Where Bali’s best chefs go on their days off</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth Recomended list -->
+    <div class="recomended-list">
+      <div class="recomended__title">
+        <h3>Dream Your Next Trip</h3>
+        <p>Weekend getaways from Tiruppur</p>
+      </div>
+      <div class="recomended-container">
+        <div class="travel-card">
+          <img
+            src="./images/chennai-madras.jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Chennai India</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/upper-bhavani-lake.jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Kodaikanal, India</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/bahia-de-bengala.jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Kanchiburam India</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/kovai-kutralam-falls.jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Coimbatore India</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="recomended-list">
+      <div class="recomended__title">
+        <h3>Top destinations for your next holiday</h3>
+        <p>Here's where your fellow travellers are headed</p>
+      </div>
+      <div class="recomended-container">
+        <div class="travel-card">
+          <img
+            src="./images/caption (11).jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Thailand Bangok</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/caption (12).jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Singapore Singapore</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/chhatrapati-shivaji-terminus.jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Mumbai India</h3>
+        </div>
+        <div class="travel-card">
+          <img
+            src="./images/singapore.jpg"
+            alt="Travel Destination"
+            class="caption-img"
+          />
+          <h3 class="img-title">Bali Indhonasia</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="last">
+      <div class="last__first">
+        <img src="./images/caption (13).jpg" width="500px" height="400px" alt="" />
+      </div>
+      <div class="last__second">
+        <div class="last__second--title">
+          <img
+            src="./images/th (6).jpeg"
+            style="border-radius: 50%"
+            width="20px"
+            height="20px"
+            alt=""
+          />
+          <p>Sponsored by Wanderlab</p>
+        </div>
+        <a>Watch The Wanderer</a>
+        <p>
+          Tripadvisor’s award-winning travel series, now streaming on Amazon
+          Prime Video
+        </p>
+        <button>learn More</button>
+      </div>
+    </div>
+
+    <!-- main footer -->
+    <div class="main__footer">
+      <footer class="footer">
+        <!-- footer top -->
+        <div class="footer__one">
+          <div>
+            <div class="footer__inside">
+              <i class="fa-solid fa-plus footer__inside--icon"></i>
+              <h3>About Tripadvisor</h3>
+            </div>
+            <div class="footer__inside--content">
+              <p><a href="#">About Us</a></p>
+              <p><a href="#">Press</a></p>
+              <p><a href="#">Resources and Policies</a></p>
+              <p><a href="#">Careers</a></p>
+              <p><a href="#">Trust & Safety</a></p>
+              <p><a href="#">Contact us</a></p>
+              <p><a href="#">Accessibility Statement</a></p>
+            </div>
+          </div>
+          <div>
+            <div class="footer__inside">
+              <i class="fa-solid fa-plus footer__inside--icon"></i>
+              <h3>Explore</h3>
+            </div>
+            <div class="footer__inside--content">
+              <p><a href="#">Write a review</a></p>
+              <p><a href="#">Add a Place</a></p>
+              <p><a href="#">Join</a></p>
+              <p><a href="#">Travellers' Choice</a></p>
+              <p><a href="#">GreenLeaders</a></p>
+              <p><a href="#">Help Centre</a></p>
+              <p><a href="#">Travel Articles</a></p>
+            </div>
+          </div>
+          <div>
+            <div class="footer__inside">
+              <i class="fa-solid fa-plus footer__inside--icon"></i>
+              <h3>Do Business With Us</h3>
+            </div>
+
+            <div class="footer__inside--content">
+              <p><a href="#">Owners & DMO/CVB</a></p>
+              <p><a href="#">Business Advantage</a></p>
+              <p><a href="#">Sponsored Placements</a></p>
+              <p><a href="#">Access our Content API</a></p>
+              <p><a href="#">Get The App</a></p>
+              <p><a href="#">iPhone App</a></p>
+              <p><a href="#">Android App</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div class="footer__two">
+          <div>
+            <div class="footer__inside">
+              <i class="fa-solid fa-plus footer__inside--icon"></i>
+              <h3>Tripadvisor Sites</h3>
+            </div>
+            <p class="footer__inside--content">
+              <a href="#">Book tours and attraction tickets on Viator</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer-2">
+        <div class="footer__bottom">
+          <div class="footer__bottom--left">
+            <div class="footer__bottom--left--1">
+              <img
+                src="./images/th (6).jpeg"
+                style="border-radius: 50%"
+                width="50px"
+                height="50px"
+                alt=""
+              />
+            </div>
+            <div class="footer__bottom--left--1">
+              <p>2025 Tripadvisor LLC All rights reserved.</p>
+              <p>
+                <a href="#">Terms of Use</a> |
+                <a href="#">Privacy and Cookies Statement</a> |
+                <a href="#">Cookie consent</a> | <a href="#">Site Map</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer__bottom--right">
+            <select class="select">
+              <option value="INR">INR</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+            <select class="select">
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+            </select>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
